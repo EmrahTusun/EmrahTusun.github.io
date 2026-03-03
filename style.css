@@ -37,7 +37,7 @@ nav {
 
 .baglantilar a {
     text-decoration: none; color: var(--metin); font-size: 13px;
-    font-weight: 500; margin-left: 20px; transition: color 0.3s;
+    font-weight: 500; margin-left: 10px; transition: color 0.3s;
 }
 
 .baglantilar a:hover { color: var(--vurgu); }
@@ -45,6 +45,7 @@ nav {
 .aksiyon-butonu { 
     background: var(--metin); color: #fff !important; 
     padding: 8px 20px; border-radius: 50px; transition: 0.3s; 
+    display: inline-block;
 }
 .aksiyon-butonu:hover { opacity: 0.8; }
 
@@ -154,16 +155,55 @@ header h1 span { color: transparent; -webkit-text-stroke: 1.5px var(--metin); }
 }
 .modal-github-butonu:hover { opacity: 0.8; transform: translateY(-3px); }
 
-
-
+/* MOBİL TASARIM GÜNCELLEMELERİ */
 @media (max-width: 768px) {
+    nav {
+        padding: 15px 5%;
+    }
+    
+    .menu-icerik {
+        padding: 10px 20px;
+        border-radius: 30px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .baglantilar {
+        margin-left: 0;
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .baglantilar a, .aksiyon-butonu {
+        font-size: 11px !important;
+        padding: 6px 12px !important;
+        margin-left: 0 !important;
+    }
+
+    .logo { font-size: 16px; }
+
     .bento-izgara { grid-template-columns: 1fr; padding: 50px 5%; }
     .kart-buyuk, .kart-genis { grid-column: span 1; grid-row: auto; padding: 30px; }
     .bento-karti h2 { font-size: 28px; } .kart-buyuk h2 { font-size: 36px; }
     .araclar-izgarasi { grid-template-columns: 1fr; }
-    header h1 { font-size: 48px; }
+    header h1 { font-size: 40px; }
     .modal-icerik { padding: 30px; }
     .modal-baslik { font-size: 32px; }
+
+    .header-bolunmus {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-top: 150px; /* Menünün altında kalmasın diye artırıldı */
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .karsilama-gorsel {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
 }
 
 .header-bolunmus {
@@ -194,20 +234,4 @@ header h1 span { color: transparent; -webkit-text-stroke: 1.5px var(--metin); }
 
 .karsilama-gorsel img:hover {
     transform: translateY(-10px);
-}
-
-
-@media (max-width: 768px) {
-    .header-bolunmus {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        padding-top: 120px;
-        height: auto;
-        min-height: 100vh;
-    }
-    
-    .karsilama-gorsel {
-        justify-content: center;
-        margin-bottom: 50px;
-    }
 }
