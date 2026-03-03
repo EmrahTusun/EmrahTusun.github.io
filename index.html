@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emrah Tusun / Siber Güvenlik & Yazılım</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <div class="arkaplan-sekli"></div>
+
+    <nav>
+        <div class="menu-icerik">
+            <span class="logo">Emrah TUSUN</span>
+            <div class="baglantilar"> 
+                <a href="#projeler" class="aksiyon-butonu" >Projeler</a>
+                <a href="https://www.linkedin.com/in/emrah-tusun-7b13912b4" class="aksiyon-butonu" target="_blank">
+                <i class="ph ph-linkedin-logo" style="font-size: 18px; margin-right: 5px; vertical-align: middle;"></i> Linkedin
+                </a>
+                <a href="https://github.com/EmrahTusun" class="aksiyon-butonu" target="_blank">
+                <i class="ph ph-github-logo" style="font-size: 18px; margin-right: 5px; vertical-align: middle;"></i> Github
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <header class="header-bolunmus">
+            <div class="karsilama-kutusu">
+                <p class="selamlama">MERHABA, BEN EMRAH</p>
+                <h1 class="animasyonlu-metin">HAKKIMDA </h1>
+                <p class="animasyonlu-metin alt-metin">
+                    Bilgisayar Mühendisliği 4. Sınıf öğrencisiyim. Siber güvenlik alanında kendimi geliştirmeye odaklanıyorum. Linux sistemleri, ağ güvenliği ve olay müdahale konularında deneyim kazanıyor, sızma testleri ve CTF yarışmalarıyla pratik becerilerimi artırıyorum. Python ve modern teknolojilerle projeler geliştiriyor, güvenlik ve performansı ön planda tutuyorum.
+                </p>
+                <div class="kaydirma-belirteci">Aşağı Kaydır ↓</div>
+            </div>
+            
+            <div class="karsilama-gorsel animasyonlu-metin">
+                <img src="images/0.jpg" alt="Emrah Tusun">
+            </div>
+        </header>
+
+        <section id="projeler" class="bento-izgara">
+            
+            <div class="bento-karti kart-buyuk kaydirma-animasyonu">
+                <div class="kart-icerik">
+                    <div class="kart-ust">
+                        <span class="proje-numarasi">01 / BİTİRME PROJESİ AUK</span>
+                        <button onclick="modalAc('modal-1')" class="proje-linki">İncele ↗</button>
+                    </div>
+                    <h2>AI Log Anomaly Detection</h2>
+                    <p>AUK adını verdiğim Sistem loglarını yapay zeka ile analiz ederek siber tehditleri önceden tespit eden otonom güvenlik motoru.</p>
+                    <div class="teknoloji-etiketleri">
+                        <span class="etiket">Python</span>
+                        <span class="etiket">Deep Learning</span>
+                        <span class="etiket">Cybersecurity</span>
+                    </div>
+                </div>
+                <div class="kart-parlamasi mavi-parlama"></div>
+            </div>
+
+            <div class="bento-karti kaydirma-animasyonu">
+                <div class="kart-icerik">
+                    <div class="kart-ust">
+                        <span class="proje-numarasi">02 / AI</span>
+                        <button onclick="modalAc('modal-2')" class="proje-linki">İncele ↗</button>
+                    </div>
+                    <h2>Chest X-Ray Görüntülerinde Histogram Tabanlı Kontrast İyileştirme ve Pneumonia Tespiti Projem</h2>
+                    <p>Bu proje, akciğer röntgeni (Chest X-Ray) görüntülerinde kontrast iyileştirme yöntemlerinin etkisini incelemek ve bu iyileştirmenin derin öğrenme tabanlı pneumonia (zatürre) tespitine katkısını analiz etmek amacıyla geliştirilmiştir. Sistem, uçtan uca bir mimari ile mobil istemci ve sunucu tarafını birlikte ele almaktadır.</p>
+                    <div class="teknoloji-etiketleri">
+                        <span class="etiket">Görüntü İşleme</span>
+                        <span class="etiket">Deep Learning</span>
+                        <span class="etiket">Python </span>
+                        <span class="etiket">Flutter</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bento-karti kaydirma-animasyonu">
+                <div class="kart-icerik">
+                    <div class="kart-ust">
+                        <span class="proje-numarasi">03 / MOBİL</span>
+                        <button onclick="modalAc('modal-3')" class="proje-linki">İncele ↗</button>
+                    </div>
+                    <h2>Focus Reader</h2>
+                    <p>Okuma hızını ve dijital odaklanmayı artırmak için tasarladığım akıllı mobil uygulama.</p>
+                    <div class="teknoloji-etiketleri">
+                        <span class="etiket">Mobile Dev</span>
+                        <span class="etiket">Flutter</span>
+                        <span class="etiket">UX/UI</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bento-karti kart-genis kaydirma-animasyonu">
+                <div class="kart-icerik">
+                    <div class="kart-ust">
+                        <span class="proje-numarasi">04 / AÇIK KAYNAK</span>
+                        <button onclick="modalAc('modal-4')" class="proje-linki">İncele ↗</button>
+                    </div>
+                    <h2>Python Mini-Tools & Scripts</h2>
+                    <p>Otomasyon ve bilgisayarlı görü çözümleri için geliştirdiğim açık kaynak araçlar koleksiyonum.</p>
+                    <div class="araclar-izgarasi">
+                        <div class="arac-ogesi"><span>▶YouTube</span> YouTube Video Downloader: YouTube videolarını en yüksek çözünürlükte yerel cihazınıza indirmek için kullanılan bir script.</div>
+                        <div class="arac-ogesi"><span>🗣</span> Text to Speech: Yazılı metinleri terminalde seslendiren pratik bir aracıdır.</div>
+                        <div class="arac-ogesi"><span>𖣯</span> Dinamik QR Generator: Metin veya bağlantıları (URL) anında taranabilir renkli QR kodlarına dönüştürür.</div>
+                        <div class="arac-ogesi"><span>🔒︎</span> Password Generator: Güvenlik standartlarına uygun, karmaşık ve tahmin edilmesi zor parolalar üretir.</div>
+                        <div class="arac-ogesi"><span>ɪᴘ</span> IP Info: Bu araç, üzerinde çalıştığı makinenin yerel ağ (LAN) üzerindeki kimlik bilgilerini tespit eder.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bento-karti kaydirma-animasyonu">
+                <div class="kart-icerik">
+                    <div class="kart-ust">
+                        <span class="proje-numarasi">05 / Sertifikalarım</span>
+                        <button onclick="modalAc('modal-5')" class="proje-linki">İncele ↗</button>
+                    </div>
+                    <h2>Sertifikalarım</h2>
+                    <p>Siber Güvenlik, Yazılım ve yapay zeka alanında kazandığım sertifikaları burada bulabilirsiniz.</p>
+                    <div class="teknoloji-etiketleri">
+                        <span class="etiket">PYTHON</span>
+                        <span class="etiket">C</span>
+                        <span class="etiket">C#</span>
+                        <span class="etiket">PHP</span>
+                        <span class="etiket">LİNUX</span>
+                        <span class="etiket">SOC</span>
+                        <span class="etiket">CTI</span>
+                        <span class="etiket">SİBERVATAN</span>
+                        <span class="etiket">FULL STACK</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bento-karti kaydirma-animasyonu">
+                <div class="kart-icerik">
+                    <div class="kart-ust">
+                        <span class="proje-numarasi">06 / İletişim bilgilerim</span>
+                        <button onclick="modalAc('modal-6')" class="proje-linki">İncele ↗</button>
+                    </div>
+                    <h2>İletişim Bilgilerim</h2>
+                    <p>İletişim kurmak isterseniz, aşağıda yer alan bilgilerden ulaşabilirsiniz.</p>
+                    <div class="teknoloji-etiketleri">
+                        <span class="etiket">E-mail</span>
+                        <span class="etiket">web-sitem</span>
+                        <span class="etiket">LinkedIn</span>
+                        <span class="etiket">GitHub</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="site-alt-bilgi">
+            <p>© 2026 Emrah Tusun</p>
+        </footer>
+    </main>
+
+    <div id="modal-1" class="modal-arkaplan">
+        <div class="modal-icerik">
+            <span class="kapat-butonu" onclick="modalKapat('modal-1')">&times; Kapat</span>
+            <span class="proje-numarasi">BİTİRME PROJESİ</span>
+            <h2 class="modal-baslik">Log Anomaly Detection</h2>
+            
+            <p class="modal-aciklama">Bu projede yapay zeka kullanarak sistem loglarındaki anormallikleri tespit eden bir sistem geliştirdim. Derin öğrenme algoritmaları sayesinde siber saldırılar henüz başlangıç aşamasındayken fark edilebiliyor.</p>
+            
+            <div class="modal-resim-izgarasi">
+                <img src="/images/img1.png" alt="Proje Detay Resmi">
+                <img src="images/img2.png" alt="Proje Grafiği">
+                <img src="images/img3.png" alt="AI Analizi Sonuçları">
+            </div>
+
+            <a href="https://github.com/EmrahTusun" target="_blank" class="modal-github-butonu">Kaynak Kodları GitHub'da İncele</a>
+        </div>
+    </div>
+
+    <div id="modal-2" class="modal-arkaplan">
+        <div class="modal-icerik">
+            <span class="kapat-butonu" onclick="modalKapat('modal-2')">&times; Kapat</span>
+            <span class="proje-numarasi">Görüntü İşleme</span>
+            <h2 class="modal-baslik">AI ile kontrast iyileştirme ve pneumonia tespiti</h2>
+            
+            <p class="modal-aciklama">Tıbbi X-Ray görüntülerinde sıkça karşılaşılan düşük kontrast problemi, hem radyolog yorumlarını hem de yapay zeka tabanlı analizleri olumsuz etkilemektedir. Bu çalışmada:
+                    Histogram Equalization ve CLAHE yöntemleri uygulanmıştır
+                    Görüntü kalitesi PSNR ve SSIM metrikleri ile ölçülmüştür
+                    Kontrast iyileştirmenin pneumonia sınıflandırma performansına etkisi değerlendirilmiştir</p>
+            
+            <div class="modal-resim-izgarasi">
+                <img src="images/img5.png" alt="mobil uygulama ekran görüntüsü">
+                <a href="images/pdf1.pdf" target="_blank" class="modal-github-butonu">Proje Raporumu İnceleyebilirisin.</a>
+            </div>
+
+            <a href="https://github.com/EmrahTusun/Chest-X-Ray-Goruntulerinde-Histogram-Tabanli-Kontrast-iyilestirme-ve-Pneumonia-Tespiti.git" target="_blank" class="modal-github-butonu">Kaynak Kodları GitHub'da İncele</a>
+        </div>
+    </div>
+
+    <div id="modal-3" class="modal-arkaplan">
+        <div class="modal-icerik">
+            <span class="kapat-butonu" onclick="modalKapat('modal-3')">&times; Kapat</span>
+            <span class="proje-numarasi">MOBİL UYGULAMA</span>
+            <h2 class="modal-baslik">Focus Reader</h2>
+            
+            <p class="modal-aciklama">Dijital ekranlarda okuma hızını artırmak ve dikkat dağınıklığını önlemek için geliştirdiğim mobil uygulama. Kelimeleri belirli bir hızda sırayla ekranda gösteren RSVP teknolojisini kullanır.</p>
+            
+            <div class="modal-resim-izgarasi1">
+                <img src="images/1.jpeg" alt="Mobil Ekran 1">
+                <img src="images/2.jpeg" alt="Mobil Ekran 2">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-4" class="modal-arkaplan">
+        <div class="modal-icerik">
+            <span class="kapat-butonu" onclick="modalKapat('modal-4')">&times; Kapat</span>
+            <span class="proje-numarasi">AÇIK KAYNAK</span>
+            <h2 class="modal-baslik">Python Mini-Tools & Scripts</h2>
+            
+            <p class="modal-aciklama">Günlük problemleri çözmek ve otomasyon sağlamak için yazdığım scriptler. Kodları görüntülemek ve daha fazlası için github adresimi ziyaret edin.</p>
+            
+            <div class="modal-resim-izgarasi">
+                <img src="images/img4.png" alt="github-repo-1">
+            </div>
+
+            <a href="https://github.com/EmrahTusun/Python-Tricks-Toolbox.git" target="_blank" class="modal-github-butonu">Tüm Depoyu GitHub'da İncele</a>
+        </div>
+    </div>
+
+    <div id="modal-5" class="modal-arkaplan">
+        <div class="modal-icerik">
+            <span class="kapat-butonu" onclick="modalKapat('modal-5')">&times; Kapat</span>
+            <span class="proje-numarasi">Sertifikalar</span>
+            <h2 class="modal-baslik">Sertifikalarım </h2>
+            <div class="modal-resim-izgarasi">
+                <img src="images/img6.png" alt="github-repo-1">
+                <img src="images/img7.png" alt="github-repo-1">
+                <img src="images/img8.png" alt="github-repo-1">
+                <img src="images/img9.png" alt="github-repo-1">
+            </div>
+
+            <a href="https://linkedin.com/in/emrahtusun" target="_blank" class="modal-github-butonu">LinkedIn Profilimden inceleyebilirsiniz</a>
+        </div>
+    </div>
+
+    <div id="modal-6" class="modal-arkaplan">
+        <div class="modal-icerik">
+            <span class="kapat-butonu" onclick="modalKapat('modal-6')">&times; Kapat</span>
+            <span class="proje-numarasi">İletişim</span>
+            <h2 class="modal-baslik">İletişim Bilgilerim</h2>
+            <p class="modal-aciklama">Eğer projelerimle ilgili sorularınız varsa, işbirliği yapmak istiyorsanız veya sadece merhaba demek istiyorsanız, aşağıdaki iletişim bilgilerimden bana ulaşabilirsiniz.</p>
+            <div class="modal-resim-izgarasi">
+                <p><strong>Email:</strong> <a href="mailto:emrahtusun0@gmail.com">emrahtusun0@gmail.com</a></p>
+                <p><strong>Web Sitesi:</strong> <a href="https://emrahtusun.github.io/Emrah.Tusun/" target="_blank">emrahtusun.github.io/websitem</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/emrah-tusun/" target="_blank">linkedin.com/in/emrah-tusun/</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/EmrahTusun" target="_blank">github.com/EmrahTusun</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
