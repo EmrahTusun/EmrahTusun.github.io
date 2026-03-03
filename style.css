@@ -216,22 +216,22 @@ header h1 span { color: transparent; -webkit-text-stroke: 1.5px var(--metin); }
 }
 
 .karsilama-gorsel {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
+        justify-content: center;
+        margin-top: 20px; /* Yazıyla fotoğraf arasına boşluk */
+        width: 100%;
+    }
 
-.karsilama-gorsel img {
-    max-width: 100%;
-    height: auto;
-    max-height: 500px;
-    object-fit: cover;
-    border-radius: 30px; 
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1); 
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    transition: transform 0.4s ease;
-}
+    .karsilama-gorsel img {
+        width: 90%; /* Ekranın %90'ını kaplasın, taşmasın */
+        height: auto; /* Orantıyı bozmasın */
+        max-height: 350px; /* Mobilde çok devasa durmasın */
+        object-fit: cover; /* Fotoğrafın içindeki yüzü/merkezi korusun */
+        border-radius: 20px;
+        display: block;
+        margin: 0 auto;
+    }
 
 .karsilama-gorsel img:hover {
     transform: translateY(-10px);
 }
+
